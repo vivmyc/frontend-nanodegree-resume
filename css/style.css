@@ -1,7 +1,7 @@
 * {
   padding:0;
   margin:0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .clearfix {
@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: navy;
   line-height: 48px;
   display: inline;
 }
@@ -84,24 +84,25 @@ a {
   font-size: 18px;
   color: #F3F3F3;
   line-height: 28px;
+  padding: 0px;
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: navy;
   display: none;
 }
 
 .orange {
-  background-color: #F5AE23;
+  background-color: #navy;
 }
 
 .orange-text {
-  color: #F5AE23;
+  color: navy;
 }
 
 .white-text {
   font-weight: bold;
-  color: #FFFFFF;
+  color: #0060A0;
 }
 
 .gray {
@@ -111,12 +112,12 @@ a {
 }
 
 .dark-gray {
-  background-color: #4A4A4A;
+  background-color: #F3F3F3;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #c8c8c8;
 }
 
 .flex-box {
@@ -139,6 +140,10 @@ ul {
   list-style-type: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 .biopic {
   float: left;
   padding: 10px;
@@ -146,8 +151,14 @@ ul {
   display: none;
 }
 
+/** FIX for Bootstrap and Google Maps Info window styes problem **/
+img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
+max-width: none;
+}
+
 img {
   padding: 10px;
+  max-height: 300px;
 }
 
 /* Bar chart stuff */
